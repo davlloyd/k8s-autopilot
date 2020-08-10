@@ -6,7 +6,7 @@ metadata:
     app: petclinic
     tier: web
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: petclinic
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: springpet:50
+        image: davlloyd/petclinic:50
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
