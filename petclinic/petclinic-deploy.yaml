@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: petclinic
-        image: davlloyd/petclinic:50
+        image: davlloyd/petclinic:52
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
