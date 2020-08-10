@@ -29,8 +29,8 @@ spec:
             httpHeaders:
             - name: Custom-Header
               value: Check
-          initialDelaySeconds: 3
-          periodSeconds: 3
+          initialDelaySeconds: 10
+          periodSeconds: 5
         env:
         - name: SPRING_PROFILES_ACTIVE # can be set to H2 (default) or mysql
           value: H2
