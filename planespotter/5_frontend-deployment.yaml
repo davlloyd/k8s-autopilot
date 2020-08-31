@@ -16,6 +16,7 @@ spec:
       labels:
         app: planespotter-frontend
         tier: frontend
+        service: planespotter
     spec:
       containers:
       - name: planespotter-fe
@@ -26,6 +27,7 @@ spec:
           value: planespotter-svc
 
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -39,7 +41,9 @@ spec:
     - port: 80
   selector:
     app: planespotter-frontend
+
 ---
+
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
