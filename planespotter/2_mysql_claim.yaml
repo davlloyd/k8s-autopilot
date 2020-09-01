@@ -4,7 +4,7 @@ metadata:
   name: mysql-claim
   namespace: planespotter
   annotations:
-    volume.beta.kubernetes.io/storage-class: vsan-default
+    volume.beta.kubernetes.io/storage-class: wcp-storage-general
 spec:
   accessModes:
     - ReadWriteOnce
