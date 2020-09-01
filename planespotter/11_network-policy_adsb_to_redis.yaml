@@ -3,7 +3,6 @@ apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
   name: planespotter-adsb-to-redis
-  namespace: planespotter
 spec:
   podSelector:
     matchLabels:
