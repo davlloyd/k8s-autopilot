@@ -16,5 +16,5 @@ spec:
             app: planespotter-app
       ports:
       - protocol: TCP
-        port: 3308
+        port: 3306
 
