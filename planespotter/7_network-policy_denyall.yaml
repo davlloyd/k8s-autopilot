@@ -4,5 +4,7 @@ metadata:
   name: default-deny
 spec:
   podSelector: {}
+  ingress:
+  - {}
   policyTypes:
   - Ingress
