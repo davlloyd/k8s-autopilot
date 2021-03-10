@@ -48,7 +48,7 @@ metadata:
   name: planespotter-frontend
 spec:
   rules:
-  - host: planespotter.syddsc.local
+  - host: planespotter.home.local
     http:
       paths:
       - backend:
