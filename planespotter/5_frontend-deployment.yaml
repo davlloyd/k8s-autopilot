@@ -39,7 +39,9 @@ spec:
     - port: 80
   selector:
     app: planespotter-frontend
-
+  sessionAffinity: ClientIP
+  type: LoadBalancer
+  
 ---
 
 apiVersion: extensions/v1beta1
